@@ -14,9 +14,9 @@ module.exports = {
         ".*\\.(vue)$": "vue-jest",
         "^.+\\.ts$": "ts-jest"
     },
-    // collectCoverage: true,
-    // collectCoverageFrom: ["src/**/*.{js,vue}", "!src/app.ts", "!**/node_modules/**"],
-    // coverageDirectory: "<rootDir>/test/coverage",
+    collectCoverage: true,
+    collectCoverageFrom: ["src/**/*.{js,vue}", "!src/app.ts", "!**/node_modules/**"],
+    coverageDirectory: "<rootDir>/test/coverage",
     modulePaths: ["<rootDir>"],
     snapshotSerializers: ["jest-serializer-vue"],
     testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"

@@ -28,8 +28,6 @@ Carousel Application Dev Project Set up.
 
 2. Run `yarn test` for running test cases in watch mode
 
-3. Run `yarn test:coverage` to obtain test coverage of the project.
-
 ## Project Structure
 
 * src
