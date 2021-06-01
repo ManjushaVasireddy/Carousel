@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product.vue matches snapshot 1`] = `
+<section class="product">
+  <card-stub imagelink="https://assets.weimgs.com/weimgs/ab/images/wcm/products/202122/0113/organic-washed-cotton-percale-lightweight-quilt-shams-1-m.jpg" altlink="https://www.westelm.com/products/washed-cotton-percale-lightweight-quilt-shams-b3603/" headertext="Organic Washed Cotton Percale Lightweight Quilt &amp;amp; Shams">
+    <!---->
+    <p class="price product-sale">
+      Sale: $34.5 - $269
+    </p>
+  </card-stub>
+</section>
+`;

@@ -1,0 +1,14 @@
+<section class="product">
+    <card
+        :imageLink="item.hero && item.hero.href"
+        :headerText="item.name"
+        :altLink="item.links && item.links.www"
+        @cardClicked="productClicked"
+        ><p class="price" v-if="regularPrice">
+            <span v-if="isOnSale">Reg:</span> {{regularPriceText}}
+        </p>
+        <p class="price product-sale" v-if="isOnSale">
+            Sale: {{sellingPriceText}}
+        </p>
+    </card>
+</section>

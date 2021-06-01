@@ -1,0 +1,17 @@
+<section class="card" @click="cardClicked">
+    <section class="card-image" :class="{'no-data-image': !imageLink}">
+        <img v-if="imageLink" :src="imageLink" width="100%" height="100%" />
+        <section class="no-data" v-else>
+            <i
+                >Image Not Available,
+                <a :href="altLink" target="_blank">Alternative Link</a></i
+            >
+        </section>
+    </section>
+    <section class="card-details">
+        <div class="card-header">{{headerText}}</div>
+        <div class="card-text">
+            <slot></slot>
+        </div>
+    </section>
+</section>

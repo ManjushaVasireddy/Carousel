@@ -1,0 +1,14 @@
+<section class="product-list">
+    <product
+        v-for="(product, index) of products"
+        :key="index"
+        :item="product"
+        :card-selected-call="cardSelected"
+    ></product>
+    <div class="modal" v-if="showCarousel">
+        <carousel
+            :images="activeProduct.images"
+            @closeCarousel="closeCarousel"
+        ></carousel>
+    </div>
+</section>

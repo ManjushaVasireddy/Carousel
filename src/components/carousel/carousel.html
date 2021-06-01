@@ -1,0 +1,25 @@
+<div class="carousel">
+    <img :src="images[activeIndex].href" class="carousel-image" />
+    <div class="carousel-controls">
+        <i @click="closeCarousel" class="close fa fa-times ml-auto"></i>
+        <div class="arrow-controls">
+            <i
+                v-if="activeIndex!=0"
+                class="mr-auto cursor-pointer fas fa-less-than"
+                @click="previous"
+            ></i>
+            <i
+                v-if="activeIndex < images.length-1"
+                class="ml-auto cursor-pointer fas fa-greater-than"
+                @click="next"
+            ></i>
+        </div>
+        <div class="indicator-container">
+            <div
+                class="indicator"
+                v-for="i in noOfIndicatorsToShow"
+                :class="{'active': activeIndex % maxIndicators == i-1}"
+            ></div>
+        </div>
+    </div>
+</div>

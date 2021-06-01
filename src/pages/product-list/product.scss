@@ -1,0 +1,15 @@
+@import "../../scss/variable";
+
+.product {
+    .price {
+        margin-bottom: 0.1em;
+        background-color: map-get($text, text-background);
+        color: $white;
+        padding: 0.5em;
+    }
+    .product-sale {
+        margin-top: 0.2em;
+        color: $white;
+        background-color: map-get($text, text-note);
+    }
+}
